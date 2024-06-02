@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #BD2F1E;
+}
+.kontejner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(pozadina.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+.navigacija{
+    text-decoration: none;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #BD2F1E;
+    text-shadow: 0 0 3px #f7a108;
+    font-size: 42px;
+
+
+}
+
+.red{
+    display: flex;
+    height: 88%;
+    align-items: center;    
+}
+.kolona{
+    flex-basis: 50%;
+    text-decoration: none;
+
+}
+
+h1{
+    color:#BD2F1E;
+    font-size: 100px;
+}
+
+
+.karta{
+width: 200px;
+height: 200px;
+display: inline-flex;
+border-radius: 10px;
+padding: 70px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-position: center;
+background-size: cover;
+transition: transform 0.5s;
+box-shadow: 0px 0px 8px #f7a108;
+
+
+
+}
+.karta1{
+    background-image: url(pozadina2.jpg);
+    text-decoration: none;
+
+}
+.karta2{
+    background-image: url(slika2.jpg);
+}
+.karta3{
+    background-image: url(pozadina3.jpg);
+}
+.karta:hover{
+    transform: translateY(-10px);
+}
+
+.karta p{
+  font-size: 40px;
+    color: #BD2F1E;
+    text-shadow: 0 0 5px #f7a108;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.red2{
+width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(pozadina2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+animacija {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes animacija {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.tekst1{
+    
+    font-size: 100px;
+    margin-top:0px;
+    color: #f7a108;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+     animation: type 2s steps(100, end); 
+}
+
+.tekst2{
+    font-size: 30px;
+        color:#f7a108;
+}
+
+
+@keyframes type{ 
+          from { 
+               width: 0; 
+               } 
+           }
+
+
+@media only screen and (max-width: 1200px) {
+.tekst1 {
+font-size: 35px;
+}
+
+.tekst2 {
+font-size: 25px;
+}
+
+h1 {
+font-size: 55px;
+}
+
+nav ul li a {
+font-size: 25px;
+}
+
+.karta {
+width: 170px;
+height: 170px;
+}
+
+.karta p {
+font-size: 35px;
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+.tekst1 {
+font-size: 30px;
+}
+
+.tekst2 {
+font-size: 20px;
+}
+
+h1 {
+font-size: 50px;
+}
+
+nav ul li a {
+font-size: 20px;
+}
+
+.karta {
+width: 150px;
+height: 150px;
+}
+
+.karta p {
+font-size: 25px;
+}
+}
+
+
+
+
+.skrivenMeni {
+    background-color:  #f7a108;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 1;
+}
+.skrivenMeni.aktivno {
+    right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+.skrivenMeni {
+width: 35%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.skrivenMeni {
+width: 30%;
+}
+}
+
+
+
+
+
+
+
+.hamburgerMeni {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-top: 0px;
+    position: relative;
+     cursor: pointer;
+     z-index: 1;
+}
+.hamburgerMeni span {
+    height: 5px;
+    width: 100%;
+    background-color: #BD2F1E;
+    box-shadow: 0 0 3px #f7a108;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 50%);
+    transition: .3s ease;
+    
+}
+.hamburgerMeni span:nth-child(1) {
+    top: 25%;
+}
+.hamburgerMeni span:nth-child(3) {
+    top: 75%;
+}
+.hamburgerMeni.aktivno span {
+    background-color: white;
+}
+.hamburgerMeni.aktivno span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburgerMeni.aktivno span:nth-child(2) {
+    opacity: 0;
+}
+.hamburgerMeni.aktivno span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
+.slikeKontejner {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 8%;
+
+
+}
+
+
+.prethodna, .sledeca {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.sledeca {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prethodna:hover, .sledeca:hover {
+  background-color: #f7a108;
+}
+
+
+.mojeSlike img{
+    box-shadow: 0px 0px 10px #f7a108;
+    border-radius: 40px;
+    width:100%
+}
+
+
+
+.tacka {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+#tackePozicija{
+    text-align:center;
+}
+
+.aktivno {
+  background-color: #f7a108;
+}
+
+
+.promena {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes promena {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 1000px) {
+  
+  .slikeKontejner {max-width: 700px}
+}
+
+@media only screen and (max-width: 800px) {
+
+  .slikeKontejner {max-width: 500px}
+}
+
+@media only screen and (max-width: 750px) {
+#navReci{
+display: none;
+}
+}
+

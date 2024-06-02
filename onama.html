@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="onama.css">
+  <title>O nama</title>
+
+</head>
+<body>
+
+  <div class="kontejner">
+    <div class="navigacija">
+           <a href="index.html"><img src="logo.png" class="logo"></a>
+      <nav>
+
+        <ul>
+        <li><a id="navReci" href="index.html">Početna</a></li>
+          <li><a id="navReci" href="meni.html">Meni</a></li>
+          <li><a id="navReci" href="kontakt.html">Kontakt</a></li>
+
+                 <li> <div class="skrivenMeni">
+                    <ul>
+           <li><a href="index.html">Početna</a></li>
+          <li><a href="meni.html">Meni</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    </div>
+
+                      <nav>
+                         <div class="hamburgerMeni">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                         </div>
+                       </nav>
+          
+                 </li>   
+    </nav>
+  </div>
+  <div class="slikeKontejner">
+
+       <div class="mojeSlike promena">
+          
+              <img src="pozadina6.jpg">
+            
+        </div>
+
+      <div class="mojeSlike promena">
+           
+              <img src="slika19.jpg">
+           
+      </div>
+
+      <div class="mojeSlike promena">
+         
+            <img src="pozadina2.jpg">
+         
+      </div>
+
+      <a class="prethodna" onclick="sledecaSlika(-1)">❮</a>
+      <a class="sledeca" onclick="sledecaSlika(1)">❯</a>
+        <br>
+    <div id="tackePozicija">
+      <span class="tacka" onclick="sadaSlika(1)"></span> 
+      <span class="tacka" onclick="sadaSlika(2)"></span> 
+      <span class="tacka" onclick="sadaSlika(3)"></span> 
+    </div>
+
+
+    </div>
+
+    
+      <div class="kolona">
+        
+        <div class="tekst1">
+        <p>Sve o Nama</p>
+        </div>
+
+        <h1>O nama</h1>
+        <div class="tekst2">
+        <p>Sve sto ste zeleli da znate</p>
+        </div>
+        <br>
+        
+        
+      </div>
+
+            <div class="kolona">
+               
+ 				<p class="opis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>          
+            </div>
+        
+  
+  
+<br>
+</div> 
+<script src="hamMeni.js"></script>
+<script src="slajderSlika.js"></script>
+
+</body>
+</html>

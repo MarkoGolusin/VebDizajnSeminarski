@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+
+}
+body{
+
+    background-size: cover;
+background-repeat: no-repeat;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(slika8.jpg);
+
+}
+
+a{
+    text-decoration: none;
+    color: #BD2F1E;
+}
+.kontejner{
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(pozadina4.jpg);
+width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+.navigacija{
+    text-decoration: none;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #BD2F1E;
+    text-shadow: 0 0 3px #f7a108;
+    font-size: 42px;
+
+
+}
+
+.naslov{
+    margin-top: 10px;
+    margin-left: 43%;
+}
+
+h1{
+    color:#BD2F1E;
+    font-size: 100px;
+    text-shadow: 1px 1px #f7a108;
+}
+
+
+p{
+	color:#f7a108 ;
+	font-size: 30px;
+	line-height: 30px;
+	font-size: 40px;
+}
+
+
+animacija {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes animacija {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.tekst1{
+    
+    font-size: 50px;
+    margin-top:0px;
+    padding-bottom: 20px;
+    color: #f7a108;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+     animation: type 2s steps(100, end); 
+     text-shadow: 1px 1px #BD2F1E;
+}
+
+
+@keyframes type{ 
+          from { 
+               width: 0; 
+               } 
+           }
+
+
+
+.skrivenMeni {
+    background-color:  #f7a108;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.skrivenMeni.aktivno {
+    right: 0;
+}
+
+
+
+
+
+
+
+.hamburgerMeni {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-top: 0px;
+    position: relative;
+     cursor: pointer;
+}
+.hamburgerMeni span {
+    height: 5px;
+    width: 100%;
+    background-color: #BD2F1E;
+    box-shadow: 0 0 3px #f7a108;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 50%);
+    transition: .3s ease;
+}
+.hamburgerMeni span:nth-child(1) {
+    top: 25%;
+}
+.hamburgerMeni span:nth-child(3) {
+    top: 75%;
+}
+.hamburgerMeni.aktivno span {
+    background-color: white;
+}
+.hamburgerMeni.aktivno span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburgerMeni.aktivno span:nth-child(2) {
+    opacity: 0;
+}
+.hamburgerMeni.aktivno span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.meni {
+  box-shadow: 0px 0px 8px #BD2F1E;
+    border-radius: 20px;
+}
+
+.meni:hover {
+   box-shadow: 0px 0px 8px #f7a108;
+}
+
+.meni img {
+
+  width: 100%;
+    object-fit: cover;
+  height: auto;
+     border-top-left-radius: 20px;
+     border-top-right-radius:20px ;
+
+
+}
+
+.opis {
+  padding: 15px;
+  text-align: center;
+  color: #f7a108;
+}
+
+
+
+
+.responsivno {
+  padding: 0 20px;
+  float: left;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+.tekst1 p{
+font-size: 35px;
+}
+
+
+h1 {
+font-size: 55px;
+}
+
+
+.opis {
+font-size: 30px;
+}
+
+
+nav ul li a {
+font-size: 25px;
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+.tekst1 p{
+font-size: 30px;
+}
+
+.tekst2 {
+font-size: 20px;
+}
+
+h1 {
+font-size: 40px;
+}
+
+.opis {
+font-size: 25px;
+}
+
+nav ul li a {
+font-size: 20px;
+}
+
+.skrivenMeni {
+width: 30%;
+}
+  .responsivno {
+    width: 110%;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+.skrivenMeni {
+width: 35%;
+}
+.responsivno {
+    width: 80%;
+    margin: 6px 0;
+    
+  }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+#navReci{
+display: none;
+}
+}
+
+
